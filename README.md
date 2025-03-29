@@ -7,6 +7,7 @@ This project is a simple movie list application built using **Vue 3** and **Vite
 - **CI/CD** configured with **GitHub Pages** for automatic deployment.
 - **Live preview** available.
 - Styled using **SCSS** for modern UI design.
+- Add SEO functionality
 
 ## Installation
 
