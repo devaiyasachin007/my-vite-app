@@ -1,14 +1,11 @@
 <template>
   <div>
   <section class="movie-list" v-if="store.listMovies">
+ 
       <CardMovie  
         v-for="(movie,index) in store.listMovies" 
-        :key="index"
-        :id="movie.imdbID"
-        :poster="movie.Poster"
-        :title="movie.Title"
-        :year="movie.Year"
-        :type="movie.Type"
+        :key="index" 
+        :movie="movie"
       />  
   </section> 
    <div class="movie-list-alert" v-else>

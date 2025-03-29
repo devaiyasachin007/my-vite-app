@@ -113,12 +113,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-.movie-description {
-  font-size: 1rem;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-
 .movie-details {
   font-size: 0.9rem;
   font-weight: 400;
@@ -226,15 +220,15 @@ footer {
   align-items: center;
   padding: 30px;
   animation: fadeIn 1.5s ease-in-out;
-  height: 80vh;
+  height: 70vh;
 
   .movie-description {
     flex: 1;
   }
 
   .movie-title {
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
     color: $neutral-color;
     font-weight: bold;
     text-transform: uppercase;
@@ -277,7 +271,7 @@ footer {
 .metascore,
 .imdb-rating,
 .imdb-votes {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin-bottom: 12px;
   color: #444;
 }
@@ -314,8 +308,8 @@ footer {
 }
 
 .plot {
-  margin-top: 20px;
-  font-size: 1.1rem;
+  margin-top: 15px;
+  font-size: 1rem;
 }
 
 strong {
