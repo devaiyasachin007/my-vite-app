@@ -30,7 +30,4 @@ jobs:
           branch: gh-pages
           folder: dist
           token: ${{ secrets.GITHUB_TOKEN }}
-on:
-  pull_request:
-    branches:
-      - master
+ 
