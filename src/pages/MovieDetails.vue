@@ -56,7 +56,7 @@ const fetchMovieData = async () => {
 
 // Navigate to home page
 const goHome = () => {
-  router.push("/");
+  router.push("/my-vite-app/");
 };
 
 // Fetch movie data when the component is mounted
