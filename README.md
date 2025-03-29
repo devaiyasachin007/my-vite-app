@@ -14,9 +14,9 @@ To get started with the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/devaiyasachin007/my-vite-app
+   git clone https://github.com/devaiyasachin007/my-vite-app.git
 
 
 ## Live Demo
 
-See the preview [Click Me!](http://www.omdbapi.com/).
+See the preview [Click Me!](https://devaiyasachin007.github.io/my-vite-app/).
