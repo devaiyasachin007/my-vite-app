@@ -2,12 +2,12 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
     {
-        path: "/",
+        path: "/my-vite-app/",
         component: () => import("@/pages/Home.vue"),
         name: "home",
     },
     {
-        path: "/movies/:id",
+        path: "/my-vite-app/movies/:id",
         component: () => import("@/pages/MovieDetails.vue"),
         name: "movie-details",
     },
