@@ -1,16 +1,16 @@
 // Variables
 $primary-color: #ff5f6d;
-$secondary-color: #ffc3a0;
+$secondary-color: #ffb39e;
 $dark-color: #222;
 $light-color: #fff;
 $highlight-color: #f39c12;
 $neutral-color: #333;
-$border-color: #444;
+$border-color: #333;
 $box-shadow-color: rgba(0, 0, 0, 0.1);
-$button-hover-color: #ffc3a0;
+$button-hover-color: #ffb39e;
 $movie-hover-shadow: rgba(0, 0, 0, 0.3);
 
-// Global styles
+
 * {
   margin: 0;
   padding: 0;
@@ -50,13 +50,12 @@ h1 {
   border: 2px solid $border-color;
   outline: none;
   transition: border 0.3s ease;
+
+  &:focus {
+    border-color: $highlight-color;
+  }
 }
 
-#search:focus {
-  border-color: $highlight-color;
-}
-
-// Movie List Styles
 .movie-list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -72,11 +71,11 @@ h1 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-}
 
-.movie:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px $movie-hover-shadow;
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px $movie-hover-shadow;
+  }
 }
 
 .movie-banner {
@@ -134,14 +133,14 @@ h1 {
   padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: $highlight-color;
+    color: $light-color;
+  }
 }
 
-.more-details:hover {
-  background-color: $highlight-color;
-  color: $light-color;
-}
 
-// Responsive Design
 @media (max-width: 1200px) {
   .movie-list {
     grid-template-columns: repeat(4, 1fr);
@@ -214,21 +213,20 @@ footer {
   font-size: 1.2rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 15px $box-shadow-color;
+
+  &:hover {
+    background-color: $button-hover-color;
+    transform: scale(1.05);
+  }
 }
 
-.home-btn:hover {
-  background-color: $button-hover-color;
-  transform: scale(1.05);
-}
-
-// Movie Detail Section
 .movie-more-detail {
   display: flex;
   justify-content: center;
-  align-items: center; // Center content vertically
+  align-items: center;
   padding: 30px;
   animation: fadeIn 1.5s ease-in-out;
-  height: 80vh; // Ensure the section takes full viewport height for vertical centering
+  height: 80vh;
 
   .movie-description {
     flex: 1;
@@ -254,7 +252,7 @@ footer {
   width: 900px;
   gap: 40px;
   animation: slideIn 1s ease-out;
-  flex-wrap: wrap; // Allow wrapping for smaller screens
+  flex-wrap: wrap;
 }
 
 .movie-poster img {
@@ -263,11 +261,11 @@ footer {
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.movie-poster img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 30px $movie-hover-shadow;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px $movie-hover-shadow;
+  }
 }
 
 .year-release,
@@ -345,11 +343,9 @@ strong {
   }
 }
 
-// Media Queries for Responsiveness
-
 @media only screen and (max-width: 1200px) {
   .movie-info {
-    width: 80%; // Reduce width on large screens
+    width: 80%;
     gap: 20px;
   }
 
@@ -377,7 +373,7 @@ strong {
 
 @media only screen and (max-width: 992px) {
   .movie-info {
-    width: 90%; // Reduce width on medium screens
+    width: 90%;
     gap: 15px;
   }
 
@@ -409,15 +405,15 @@ strong {
 
 @media only screen and (max-width: 768px) {
   .movie-more-detail {
-    padding: 20px; // Reduce padding for small screens
+    padding: 20px;
     flex-direction: column;
     align-items: center;
-    height: auto; // Allow height to adjust for smaller screens
+    height: auto;
   }
 
   .movie-info {
-    width: 100%; // Take full width for small screens
-    flex-direction: column; // Stack vertically
+    width: 100%;
+    flex-direction: column;
     gap: 20px;
   }
 
@@ -449,7 +445,7 @@ strong {
 
 @media only screen and (max-width: 480px) {
   .movie-title {
-    font-size: 1.2rem; // Further decrease title font size
+    font-size: 1.2rem;
   }
 
   .movie-poster img {
